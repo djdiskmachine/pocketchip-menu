@@ -11,18 +11,20 @@ Still WIP.
 ```
 cd ~
 git clone https://github.com/djdiskmachine/pocketchip-menu.git
-cd pocketchip-menu
-chmod +x setup.sh && ./setup.sh
+cd pocketchip-menu && chmod +x setup.sh && ./setup.sh
+```
 
+setup.sh does the following:
+```
 sudo apt install unclutter python3-pip python3-pygame python3-dbus awesome
 sudo pip install -r requirements.txt
 chmod +x load.sh
 mkdir -p /home/chip/.config/awesome/
 ln rc.lua /home/chip/.config/awesome/rc.lua
+#Restart awesome and it should load directly to the new menu:
+echo 'awesome.restart()' | awesome-client
 ```
 
-Restart awesome and it should load directly to the new menu:
-echo 'awesome.restart()' | awesome-client
 
 ## Notes
 
