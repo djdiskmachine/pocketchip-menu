@@ -1,4 +1,4 @@
-sudo apt install unclutter python3-pip python3-pygame python3-dbus awesome
+sudo apt install unclutter python3-pip python3-pygame python3-dbus upower awesome
 sudo pip install -r requirements.txt
 chmod +x load.sh
 mkdir -p /home/chip/.config/awesome/
